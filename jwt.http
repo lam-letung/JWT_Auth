@@ -1,0 +1,26 @@
+GET http://localhost:5000/books
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhbWx0MTUiLCJpYXQiOjE2ODk2NzgyOTMsImV4cCI6MTY4OTY3ODMyM30.JTRoPQZ1vkUVhoGhL6eoFqeYUOuZsOUqp0CTIGJzwuE
+
+###
+POST http://localhost:5500/login
+Content-Type: application/json
+
+{
+    "username": "lamlt15"
+}
+
+###
+POST http://localhost:5500/refreshToken
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhbWx0MTUiLCJpYXQiOjE2ODk2NzgyNjB9.HOVpfNw1pY8Jsx3hxxpOEBVhYDtY6LzG0qqusE2pxxg"
+}
+
+###
+POST http://localhost:5500/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxhbWx0MTUiLCJpYXQiOjE2ODk2NzgyNjB9.HOVpfNw1pY8Jsx3hxxpOEBVhYDtY6LzG0qqusE2pxxg"
+}
